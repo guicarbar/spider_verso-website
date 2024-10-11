@@ -1,0 +1,246 @@
+/* import do globaç arquivo */
+@import url(style.css);
+
+/* wrapper */
+
+.wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100vh;
+}
+
+
+/* navbar */
+
+.aside-bar {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+
+.nav {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.nav>ul>li>a {
+    padding: 1em;
+    border: 2px solid var(--white);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--black);
+    font-weight: bold;
+    transition: .3s ease-in-out;
+}
+
+.nav>ul>li:nth-child(2) {
+    margin: 3.75rem 0;
+}
+
+.nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: var(--white);
+    z-index: 0;
+}
+
+.nav>ul {
+    z-index: 1;
+}
+
+.nav>ul>li>a:hover, .nav>ul>li>a.active {
+    color: var(--color1);
+    background-color: var(--white);
+}
+
+
+.nav__icon {
+    position: absolute;
+    top: 35px;
+}
+
+
+/* Conteudo */
+
+.main-content {
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    padding-left: 130px;
+    background-size: cover;
+}
+
+.bg-spiderman-1 {
+    background-image: url(../images/spiderman-tobey/movie-01/background.png);
+}
+
+.bg-spiderman-2 {
+    background-image: url(../images/spiderman-tobey/movie-02/background.png);
+}
+
+.bg-spiderman-3 {
+    background-image: url(../images/spiderman-tobey/movie-03/background.png);
+}
+
+.bg-spiderman-1-andrew {
+    background-image: url(../images/spiderman-andrew/movie-01/background.png);
+}
+
+.bg-spiderman-2-andrew {
+    background-image: url(../images/spiderman-andrew/movie-02/background.png);
+}
+
+.bg-spiderman-1-tom {
+    background-image: url(../images/spiderman-tom/movie-01/background.png);
+}
+
+.bg-spiderman-2-tom {
+    background-image: url(../images/spiderman-tom/movie-02/background.png);
+}
+
+.bg-spiderman-3-tom {
+    background-image: url(../images/spiderman-tom/movie-03/background.png);
+}
+
+
+.main-content__top {
+    height: 80vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+.main-content__buttom {
+    height: 20vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+
+
+/* Conteudo | top */
+
+.logo>img {
+    margin: 50px 0 30px;
+    max-height: 35%;
+}
+
+
+/* conteudo | descrição & pills & link-YT */
+
+.pills {
+    margin-bottom: 20px;
+}
+
+.pills>ul {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.pills>ul>li {
+    background-color: var(--color1);
+    color: var(--white);
+    padding: 5px 15px;
+    margin: 0 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.pills>ul>li:first-child {
+    margin-left: 0;
+}
+
+
+.description{
+    background-color: rgba(0, 0, 0, .7);
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.description>p {
+    color: var(--white);
+    line-height: 170%;  
+}
+
+.link {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.link-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    padding: 3px;
+    margin-right: 10px;
+    background-color: var(--color1);
+    border: 1px solid var(--white);
+    background-clip: content-box;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-icon {
+    border: 7px solid var(--white);
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    margin-right: -7px;
+}
+
+label {
+    margin-right: 100px;
+}
+
+
+/* gallery */
+
+.gallery {
+    padding: 20px;
+    padding-left: 0;
+}
+
+.gallery>ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.gallery>ul>li {
+    margin-left: 25px;
+}
+
+.gallery>ul>li:first-child {
+    margin-left: 0;
+}
+
+.gallery>ul>li>a>img {
+    border: 6px solid var(--white);
+    border-radius: 15px;
+}
