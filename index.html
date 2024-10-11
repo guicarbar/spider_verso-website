@@ -22,30 +22,33 @@
     </nav>
 
     <section class="container">
-        <a href="pages/Tobey-Maguire/spiderMan-1.html" class="section-card" id="spider-man-1" title="Descubra mais sobre o Homem-aranha de Tobey Maguire">
-            <img class="section-card__background" src="assets/images/pic-sm-bg-01.jpg" alt="Imagem de uma rua de Nova York">
-            <img class="section-card__img" src="assets/images/spider-man-01.png" alt="Tobey Maguire">
-            <h2 class="section-card__title">Tobey Maguire</h2>
-        </a>
-        <a href="pages/Adrew-Garfield/spiderMan-1.html" class="section-card" id="spider-man-2" title="Descubra mais sobre o Homem-aranha de Adrew Garfield">
-            <img class="section-card__background" src="assets/images/pic-sm-bg-03.jpg" alt="Imagem de uma rua de Nova York">
-            <img class="section-card__img" src="assets/images/spider-man-03.png" alt="Andrew Garfield">
-            <h2 class="section-card__title">Andrew Garfield</h2>
-        </a>
-        <a href="pages/Tom-Holland/spiderMan-1.html" class="section-card" id="spider-man-3" title="Descubra mais sobre o Homem-aranha de Tom Holland">
-            <img class="section-card__background" src="assets/images/pic-sm-bg-02.jpg" alt="Imagem de uma rua de Nova York">
-            <img class="section-card__img" src="assets/images/spider-man-02.png" alt="Tom holland">
-            <h2 class="section-card__title">Tom holland</h2>
-        </a>
+        <div class="card-carousel" style="transform: translateZ(-40vw) rotateY(0deg);">
+            <a href="pages/Tobey-Maguire/spiderMan-1.html" class="section-card" id="spider-man-1" title="Descubra mais sobre o Homem-aranha de Tobey Maguire">
+                <img class="section-card__background" src="assets/images/pic-sm-bg-01.jpg" alt="Imagem de uma rua de Nova York">
+                <img class="section-card__img" src="assets/images/spider-man-01.png" alt="Tobey Maguire">
+                <h2 class="section-card__title">Tobey Maguire</h2>
+            </a>
+            <a href="pages/Adrew-Garfield/spiderMan-1.html" class="section-card" id="spider-man-2" title="Descubra mais sobre o Homem-aranha de Adrew Garfield">
+                <img class="section-card__background" src="assets/images/pic-sm-bg-03.jpg" alt="Imagem de uma rua de Nova York">
+                <img class="section-card__img" src="assets/images/spider-man-03.png" alt="Andrew Garfield">
+                <h2 class="section-card__title">Andrew Garfield</h2>
+            </a>
+            <a href="pages/Tom-Holland/spiderMan-1.html" class="section-card" id="spider-man-3" title="Descubra mais sobre o Homem-aranha de Tom Holland">
+                <img class="section-card__background" src="assets/images/pic-sm-bg-02.jpg" alt="Imagem de uma rua de Nova York">
+                <img class="section-card__img" src="assets/images/spider-man-02.png" alt="Tom holland">
+                <h2 class="section-card__title">Tom holland</h2>
+            </a>
+        </div>
     </section>
 
     <section class="controller">
-        <div class="section-controller__button">01</div>
-        <div class="section-controller__button">02</div>
-        <div class="section-controller__button">03</div>
+        <div class="section-controller__button controller-button__active" id="1" onclick="selectcarousselItem(this)">01</div>
+        <div class="section-controller__button" id="2" onclick="selectcarousselItem(this)">02</div>
+        <div class="section-controller__button" id="3" onclick="selectcarousselItem(this)">03</div>
         <div class="section-controller__line"></div>
     </section>
 
+    <script src="assets/scripts/caroussel.js"></script>
     <script src="assets/scripts/card-hover.js"></script>
 </body>
 </html>

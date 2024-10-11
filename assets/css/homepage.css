@@ -71,14 +71,37 @@ body[id^="spider-man-"] .section-card:not(.section-card__hovered) {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-evenly;
+    perspective: 3000px;
+
+}
+
+.card-carousel {
+    display: flex;
+    justify-content: center;
+    width: calc(100vw / 3 - 10%);
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease-in;
 }
 
 .section-card {
     border: 0.5rem solid var(--white);
-    width: calc(100% / 3 - 8%);
+    width: 100%;
     height: 70vh;
-    position: relative;
+    position: absolute;
     transition: filter .5s ease-in-out;
+
+}
+
+.section-card:nth-child(1) {
+    transform: rotateY(0deg) translateZ(50vw);
+}
+
+.section-card:nth-child(2) {
+    transform: rotateY(120deg) translateZ(50vw);
+}
+
+.section-card:nth-child(3) {
+    transform: rotateY(240deg) translateZ(50vw);
 }
 
 .section-card__background {
@@ -127,12 +150,14 @@ body[id^="spider-man-"] .section-card:not(.section-card__hovered) {
 /* carroussel | controller */
 
 .controller {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
+    bottom: 1.5rem;
+    width: 100%;
 }
 
 .section-controller__button {
