@@ -17,5 +17,5 @@ A ideia central deste site é oferecer uma experiência visual única, destacand
 
 ---
 
-> ⚠️ **Observação**: Projetos com o sufixo *`_Website`* são aplicativos desenvolvidos especificamente para a web. 🌐  
+> ⚠️ **Observação**: Projetos com o sufixo *`-Website`* são aplicativos desenvolvidos especificamente para a web. 🌐  
 
