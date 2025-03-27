@@ -9,6 +9,8 @@
 
 > A ideia central deste site é oferecer uma experiência visual única, destacando diferentes tecnologias e soluções criativas. Ele reflete meu processo criativo e o conhecimento técnico que venho adquirindo, além de ser uma oportunidade para praticar conceitos de cursos e artigos que estudei durante sua criação.
 
+[Visite o projeto](https://guicarbar.github.io/spider_verso-website/)
+
 
 ## Tecnologias
 
